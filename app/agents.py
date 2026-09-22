@@ -35,7 +35,12 @@ def search_commit_history(question: str) -> str:
 
 
 def _llm() -> LLM:
-    return LLM(model=GROQ_MODEL, api_key=GROQ_API_KEY, temperature=0.3)
+    return LLM(
+        model=GROQ_MODEL,
+        api_key=GROQ_API_KEY,
+        temperature=0.3,
+        additional_params={"tool_choice": "auto"}
+    )
 
 
 def build_crew(question: str) -> Crew:
