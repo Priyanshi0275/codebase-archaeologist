@@ -10,11 +10,3 @@ crewai-tools>=0.14.0
 pydantic>=2.9.2
 requests>=2.32.3
 streamlit>=1.39.0
-
-# Needed LIVE for LoRA style rewriting (app/style_service.py) — this is
-# why the app now deploys to Hugging Face Spaces (16GB RAM free tier)
-# instead of Render (512MB free tier, too small for these).
-torch>=2.4.1
-transformers>=4.45.2
-peft>=0.13.2
-huggingface_hub>=0.25.0
