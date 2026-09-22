@@ -1,0 +1,9 @@
+.env
+chroma_db/
+repo_cache/
+__pycache__/
+*.pyc
+lora-adapter/
+.venv/
+venv/
+*.log

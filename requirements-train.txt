@@ -1,0 +1,8 @@
+# Install these ONLY in Google Colab (free GPU) for LoRA training.
+# Do NOT install these on your free web host — too heavy, not needed for the live demo.
+torch==2.4.1
+transformers==4.45.2
+peft==0.13.2
+datasets==3.0.1
+accelerate==1.0.1
+gitpython==3.1.43
